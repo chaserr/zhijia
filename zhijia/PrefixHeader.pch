@@ -1,0 +1,91 @@
+//
+//  PrefixHeader.pch
+//  zhijia
+//
+//  Created by admin on 15/7/16.
+//  Copyright (c) 2015年 Beijing Hahu Technology Development Co., Ltd. All rights reserved.
+//
+
+#ifndef zhijia_PrefixHeader_pch
+#define zhijia_PrefixHeader_pch
+
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AppDelegate.h"
+#import "AppDefine.h"
+#import "AppNavigator.h"
+#import "AppGlobal.h"
+#import "GBUtils.h"
+#import "GBDefines.h"
+#import "GBViewController.h"
+#import "GBNavigationController.h"
+#import "GBTableViewController.h"
+#import "GBCore.h"
+#import "GBConfig.h"
+#import "AppUser.h"
+#import "AppUtility.h"
+
+
+#import <ReactiveCocoa.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import "MJExtension.h"
+
+// 分类
+#import "UIView+TYAlertView.h"
+#import "UIButton+touch.h"
+#import "UIDevice+Ext.h"
+#import "NSObject+EasyJSON.h"
+#import "NSArray+EasyExtend.h"
+#import "NSString+EasyExtend.h"
+#import "NSDictionary+EasyExtend.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "NSString+EasyExtend.h"
+#import "NSDate+Estension.h"
+#import "NSObject+NSCoding.h"
+//IM
+#import "CDIMService.h"
+
+
+// 工具类
+#import "Util/Util.h"
+#import "UUInputAccessoryView.h"
+#import "rect.h"
+#import "GBHudView.h"
+#import "STAlertView.h"
+#import "IBActionSheet.h"
+#import "MozTopAlertView.h"
+#import "GBNetworking.h"
+
+// BaseUI
+#import "GBImageView.h"
+
+
+
+
+// 逻辑处理
+#import "GBPhotoManager.h"
+#import "GBLoginManager.h"
+
+
+
+#endif
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Register</key>
+	<string>/users</string>
+	<key>LoginIn</key>
+	<string>/login</string>
+	<key>ServerHost</key>
+	<string>https://staging.Hahu.tv</string>
+</dict>
+</plist>

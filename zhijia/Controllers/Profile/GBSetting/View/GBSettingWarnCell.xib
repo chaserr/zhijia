@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="GBSettingWarnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打开消息提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNd-vk-xZ5">
+                        <rect key="frame" x="10" y="10" width="102" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0F-uF-SFS">
+                        <rect key="frame" x="261" y="10" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PNd-vk-xZ5" secondAttribute="bottom" constant="10" id="9Yx-Zv-pA1"/>
+                    <constraint firstItem="PNd-vk-xZ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="G6a-sh-FHc"/>
+                    <constraint firstItem="V0F-uF-SFS" firstAttribute="centerY" secondItem="PNd-vk-xZ5" secondAttribute="centerY" id="ls6-09-Vsb"/>
+                    <constraint firstAttribute="trailing" secondItem="V0F-uF-SFS" secondAttribute="trailing" constant="10" id="u6b-Uw-hYc"/>
+                    <constraint firstItem="PNd-vk-xZ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vEC-AU-1KP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="177" y="313"/>
+        </tableViewCell>
+    </objects>
+</document>

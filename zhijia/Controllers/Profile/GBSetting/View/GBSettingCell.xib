@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="GBSettingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置匿名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8j-Di-EKB">
+                        <rect key="frame" x="10" y="10" width="68" height="34.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oET-5b-4Q6">
+                        <rect key="frame" x="88" y="12.5" width="222" height="30"/>
+                        <state key="normal" title="设置一个匿名">
+                            <color key="titleColor" red="0.52453926282051277" green="0.52453926282051277" blue="0.52453926282051277" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oET-5b-4Q6" firstAttribute="leading" secondItem="e8j-Di-EKB" secondAttribute="trailing" constant="10" id="35V-zf-wr3"/>
+                    <constraint firstAttribute="bottom" secondItem="e8j-Di-EKB" secondAttribute="bottom" constant="10" id="LDb-Dk-gTA"/>
+                    <constraint firstItem="oET-5b-4Q6" firstAttribute="centerY" secondItem="e8j-Di-EKB" secondAttribute="centerY" id="Tyx-Lw-7IG"/>
+                    <constraint firstAttribute="trailing" secondItem="oET-5b-4Q6" secondAttribute="trailing" constant="10" id="Uvo-Zr-C5A"/>
+                    <constraint firstItem="e8j-Di-EKB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VSW-CF-7mf"/>
+                    <constraint firstItem="e8j-Di-EKB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hVL-kR-IyG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputAnonymousBtn" destination="oET-5b-4Q6" id="FR6-pE-hpp"/>
+            </connections>
+            <point key="canvasLocation" x="152" y="175.5"/>
+        </tableViewCell>
+    </objects>
+</document>

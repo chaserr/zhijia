@@ -1,0 +1,24 @@
+//
+//  zhijiaAppstore.xcconfig
+//  zhijia
+//
+//  Created by 童星 on 16/6/9.
+//  Copyright © 2016年 Beijing tongxing Technology Development Co., Ltd. All rights reserved.
+//
+
+
+//App的唯一标示符
+PRODUCT_BUNDLE_IDENTIFIER = com.hahu.zhijia
+
+//友盟appkey
+UMeng_KEY        =  5758dbdee0f55aaf51000516
+
+// 新浪AppKey
+Sina_AppKey   =  2908806847
+Sina_AppSecret =  93265075a619df27231722ed13de7ddc
+
+// 微信
+
+// QQ
+QQ_AppID = 1105386787
+QQ_AppKey = qPUIyn7zWzkJBnl7

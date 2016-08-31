@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="GBBesideJobPeopleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJ5-zg-PvR">
+                        <rect key="frame" x="10" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="0IP-vY-UEc"/>
+                            <constraint firstAttribute="width" constant="24" id="uW5-48-P8b"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身边工作的人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaZ-DW-H7D">
+                        <rect key="frame" x="44" y="6" width="102" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ7-lB-wrj">
+                        <rect key="frame" x="44" y="63" width="246" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RKR-Ro-0bO"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="CPb-2M-uU3">
+                        <rect key="frame" x="302" y="76" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="iTE-T3-R8Y"/>
+                            <constraint firstAttribute="width" constant="8" id="uCX-FZ-nu8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lJ5-zg-PvR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QNH-5h-lH9"/>
+                    <constraint firstItem="AaZ-DW-H7D" firstAttribute="centerY" secondItem="lJ5-zg-PvR" secondAttribute="centerY" id="Tb6-Kc-vFh"/>
+                    <constraint firstAttribute="trailing" secondItem="CPb-2M-uU3" secondAttribute="trailing" constant="10" id="Uag-Xq-zKd"/>
+                    <constraint firstItem="CPb-2M-uU3" firstAttribute="centerY" secondItem="yJ7-lB-wrj" secondAttribute="centerY" id="Wlo-KO-O4s"/>
+                    <constraint firstAttribute="trailing" secondItem="yJ7-lB-wrj" secondAttribute="trailing" constant="30" id="XPZ-mL-ko6"/>
+                    <constraint firstItem="yJ7-lB-wrj" firstAttribute="leading" secondItem="AaZ-DW-H7D" secondAttribute="leading" id="Yq6-6f-ptY"/>
+                    <constraint firstAttribute="bottom" secondItem="yJ7-lB-wrj" secondAttribute="bottom" constant="26" id="faa-DV-OZU"/>
+                    <constraint firstItem="yJ7-lB-wrj" firstAttribute="top" secondItem="AaZ-DW-H7D" secondAttribute="bottom" constant="26" id="iI3-3V-mc4"/>
+                    <constraint firstItem="AaZ-DW-H7D" firstAttribute="leading" secondItem="lJ5-zg-PvR" secondAttribute="trailing" constant="10" id="jCq-V3-4OV"/>
+                    <constraint firstItem="lJ5-zg-PvR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xvA-yY-3as"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellContent" destination="yJ7-lB-wrj" id="uXv-at-4sb"/>
+                <outlet property="cellImage" destination="lJ5-zg-PvR" id="aT2-Ck-05p"/>
+                <outlet property="cellRightArrow" destination="CPb-2M-uU3" id="KfV-vM-qjk"/>
+                <outlet property="cellTitle" destination="AaZ-DW-H7D" id="W3q-to-0wa"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow" width="7" height="12"/>
+    </resources>
+</document>

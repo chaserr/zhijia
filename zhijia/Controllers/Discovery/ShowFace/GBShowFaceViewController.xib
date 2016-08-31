@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBShowFaceViewController">
+            <connections>
+                <outlet property="bgImageView" destination="EnV-ZK-jmG" id="biH-AK-YdZ"/>
+                <outlet property="bgLivePhotoView" destination="uft-BS-FIv" id="6rf-ia-gBe"/>
+                <outlet property="locationLabel" destination="Jcj-tJ-1Rn" id="oaN-No-1Vw"/>
+                <outlet property="nameLabel" destination="Fe8-tG-2Cy" id="h9m-oc-lfe"/>
+                <outlet property="showSmallImage" destination="5fd-Rq-P9F" id="cTa-EP-4aI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VzN-Mk-Beb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uft-BS-FIv" customClass="PHLivePhotoView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="463"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="EnV-ZK-jmG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="458"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_shoot_line" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-Mq-RTF">
+                            <rect key="frame" x="0.0" y="458" width="414" height="5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="NMi-6E-hCl"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97654168080000003" green="1" blue="0.94590977409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="EnV-ZK-jmG" firstAttribute="top" secondItem="uft-BS-FIv" secondAttribute="top" id="IA9-cF-T5F"/>
+                        <constraint firstItem="EnV-ZK-jmG" firstAttribute="leading" secondItem="uft-BS-FIv" secondAttribute="leading" id="Klk-0p-sB1"/>
+                        <constraint firstItem="Zka-Mq-RTF" firstAttribute="leading" secondItem="uft-BS-FIv" secondAttribute="leading" id="Pld-tC-st9"/>
+                        <constraint firstAttribute="bottom" secondItem="Zka-Mq-RTF" secondAttribute="bottom" id="ebA-SO-jlI"/>
+                        <constraint firstAttribute="trailing" secondItem="EnV-ZK-jmG" secondAttribute="trailing" id="fL9-sL-9xq"/>
+                        <constraint firstAttribute="trailing" secondItem="Zka-Mq-RTF" secondAttribute="trailing" id="mok-9M-bbN"/>
+                        <constraint firstAttribute="bottom" secondItem="EnV-ZK-jmG" secondAttribute="bottom" constant="5" id="npw-nj-xmd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h76-hZ-Vu3">
+                    <rect key="frame" x="157" y="513" width="100" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-Rq-P9F">
+                            <rect key="frame" x="5" y="5" width="90" height="90"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="45"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5fd-Rq-P9F" secondAttribute="trailing" constant="5" id="4jo-7g-f6n"/>
+                        <constraint firstItem="5fd-Rq-P9F" firstAttribute="top" secondItem="h76-hZ-Vu3" secondAttribute="top" constant="5" id="LOS-Ct-4WR"/>
+                        <constraint firstAttribute="width" constant="100" id="VuX-pl-6Ih"/>
+                        <constraint firstItem="5fd-Rq-P9F" firstAttribute="leading" secondItem="h76-hZ-Vu3" secondAttribute="leading" constant="5" id="YLl-6p-MCY"/>
+                        <constraint firstAttribute="height" constant="100" id="hXI-WP-abz"/>
+                        <constraint firstAttribute="bottom" secondItem="5fd-Rq-P9F" secondAttribute="bottom" constant="5" id="swM-90-TIn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萨摩耶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-tG-2Cy">
+                    <rect key="frame" x="0.0" y="633" width="414" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lhc-cR-b7v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcj-tJ-1Rn">
+                    <rect key="frame" x="0.0" y="664" width="414" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="kM6-H0-W7S"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="100 m" image="discover_shoot_location-Pin">
+                        <color key="titleColor" red="0.55172275640000001" green="0.55172275640000001" blue="0.55172275640000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="disabled" title="100 m" image="discover_shoot_location-Pin"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95667067309999998" green="0.95667067309999998" blue="0.95667067309999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="h76-hZ-Vu3" firstAttribute="centerX" secondItem="VzN-Mk-Beb" secondAttribute="centerX" id="1TO-40-cH2"/>
+                <constraint firstAttribute="trailing" secondItem="uft-BS-FIv" secondAttribute="trailing" id="Ciw-7O-M13"/>
+                <constraint firstAttribute="trailing" secondItem="Jcj-tJ-1Rn" secondAttribute="trailing" id="EzY-cE-hVY"/>
+                <constraint firstItem="Jcj-tJ-1Rn" firstAttribute="leading" secondItem="VzN-Mk-Beb" secondAttribute="leading" id="H6a-yl-Hsh"/>
+                <constraint firstAttribute="trailing" secondItem="Fe8-tG-2Cy" secondAttribute="trailing" id="Ja2-Kt-6hD"/>
+                <constraint firstItem="Fe8-tG-2Cy" firstAttribute="centerX" secondItem="VzN-Mk-Beb" secondAttribute="centerX" id="LRm-I5-yAO"/>
+                <constraint firstItem="uft-BS-FIv" firstAttribute="top" secondItem="VzN-Mk-Beb" secondAttribute="top" id="eGm-Tt-86p"/>
+                <constraint firstAttribute="bottom" secondItem="Jcj-tJ-1Rn" secondAttribute="bottom" constant="50" id="lnB-Il-VR4"/>
+                <constraint firstItem="Fe8-tG-2Cy" firstAttribute="leading" secondItem="VzN-Mk-Beb" secondAttribute="leading" id="p5i-aT-GLL"/>
+                <constraint firstItem="uft-BS-FIv" firstAttribute="leading" secondItem="VzN-Mk-Beb" secondAttribute="leading" id="p76-ee-up6"/>
+                <constraint firstItem="Jcj-tJ-1Rn" firstAttribute="centerX" secondItem="VzN-Mk-Beb" secondAttribute="centerX" id="pbc-Nz-NNy"/>
+                <constraint firstItem="Jcj-tJ-1Rn" firstAttribute="top" secondItem="Fe8-tG-2Cy" secondAttribute="bottom" constant="10" id="uXE-Hw-N5o"/>
+                <constraint firstItem="h76-hZ-Vu3" firstAttribute="top" secondItem="uft-BS-FIv" secondAttribute="bottom" constant="50" id="yVt-f8-dZp"/>
+                <constraint firstItem="Fe8-tG-2Cy" firstAttribute="top" secondItem="h76-hZ-Vu3" secondAttribute="bottom" constant="20" id="zxS-Yl-yHv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="132" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="discover_shoot_line" width="320" height="5"/>
+        <image name="discover_shoot_location-Pin" width="9" height="11"/>
+        <image name="testPhoto" width="962" height="955"/>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobExpCellID" rowHeight="131" id="KGk-i7-Jjw" customClass="GBJobExpCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雅虎" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8e-M9-E1O">
+                        <rect key="frame" x="15" y="10" width="36" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.27175480769230764" green="0.27175480769230764" blue="0.27175480769230764" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013.5 ~ 2014.5" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-ij-eb9">
+                        <rect key="frame" x="200" y="10" width="109.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.56109775641025639" green="0.56109775641025639" blue="0.56109775641025639" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品总监" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-Hx-esN">
+                        <rect key="frame" x="15" y="41" width="68" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.42636217948717947" green="0.42636217948717947" blue="0.42636217948717947" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igk-Nb-IOo">
+                        <rect key="frame" x="88" y="41" width="1" height="20.5"/>
+                        <color key="backgroundColor" red="0.62299679487179493" green="0.62299679487179493" blue="0.62299679487179493" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="DM2-fQ-GYv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJt-HU-yXA">
+                        <rect key="frame" x="94" y="41" width="34" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.42636217949999999" green="0.42636217949999999" blue="0.42636217949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPz-Vq-d38">
+                        <rect key="frame" x="15" y="69.5" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.87648237179487176" green="0.87648237179487176" blue="0.87648237179487176" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="THA-CU-US9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雅虎高级产品总监，负责团队管理，带领团队完善核心产品。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFM-3y-BHd">
+                        <rect key="frame" x="15" y="81" width="295" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.42636217949999999" green="0.42636217949999999" blue="0.42636217949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uJt-HU-yXA" firstAttribute="top" secondItem="MlU-Hx-esN" secondAttribute="top" id="6P7-hg-aiy"/>
+                    <constraint firstItem="igk-Nb-IOo" firstAttribute="centerY" secondItem="MlU-Hx-esN" secondAttribute="centerY" id="7US-nx-3US"/>
+                    <constraint firstItem="MPz-Vq-d38" firstAttribute="leading" secondItem="MlU-Hx-esN" secondAttribute="leading" id="9aC-yG-0Pj"/>
+                    <constraint firstItem="igk-Nb-IOo" firstAttribute="top" secondItem="MlU-Hx-esN" secondAttribute="top" id="HTN-ZZ-kOh"/>
+                    <constraint firstItem="igk-Nb-IOo" firstAttribute="leading" secondItem="MlU-Hx-esN" secondAttribute="trailing" constant="5" id="PC6-Ww-o4j"/>
+                    <constraint firstItem="MPz-Vq-d38" firstAttribute="top" secondItem="uJt-HU-yXA" secondAttribute="bottom" constant="8" id="XL8-sr-fEO"/>
+                    <constraint firstAttribute="trailing" secondItem="LFM-3y-BHd" secondAttribute="trailing" constant="10" id="cHi-Wl-on1"/>
+                    <constraint firstAttribute="trailing" secondItem="MPz-Vq-d38" secondAttribute="trailing" id="fOP-Sw-RBl"/>
+                    <constraint firstItem="uJt-HU-yXA" firstAttribute="leading" secondItem="igk-Nb-IOo" secondAttribute="trailing" constant="5" id="gCo-Bt-OtU"/>
+                    <constraint firstItem="MlU-Hx-esN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hjj-LX-w1x"/>
+                    <constraint firstItem="LFM-3y-BHd" firstAttribute="top" secondItem="MPz-Vq-d38" secondAttribute="bottom" constant="10" id="mmU-gO-20A"/>
+                    <constraint firstAttribute="trailing" secondItem="D4b-ij-eb9" secondAttribute="trailing" constant="10" id="mtT-al-d1q"/>
+                    <constraint firstItem="S8e-M9-E1O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nHG-zB-kf4"/>
+                    <constraint firstItem="D4b-ij-eb9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nhJ-eL-1Pq"/>
+                    <constraint firstItem="S8e-M9-E1O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="qfT-aQ-esg"/>
+                    <constraint firstItem="LFM-3y-BHd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="t0j-Ng-lO2"/>
+                    <constraint firstItem="MlU-Hx-esN" firstAttribute="top" secondItem="S8e-M9-E1O" secondAttribute="bottom" constant="10" id="vuX-H7-gR8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="companyNameLabel" destination="S8e-M9-E1O" id="9eE-oB-Y5v"/>
+                <outlet property="departmentNameLabel" destination="MlU-Hx-esN" id="skj-kM-zPL"/>
+                <outlet property="jobContentDesLabel" destination="LFM-3y-BHd" id="F4b-SS-EN0"/>
+                <outlet property="jobPositionLabel" destination="uJt-HU-yXA" id="jUq-aY-y2Q"/>
+                <outlet property="jobTimeLabel" destination="D4b-ij-eb9" id="75c-UL-p84"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="249.5"/>
+        </tableViewCell>
+    </objects>
+</document>

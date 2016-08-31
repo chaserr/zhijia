@@ -1,0 +1,2 @@
+/Users/tongxing/Library/Developer/Xcode/DerivedData/zhijia-crwdblqtsepprkfjuhxijsrvklgk/Build/Products/Debug-iphonesimulator/zhijia.app
+iPhone Developer
